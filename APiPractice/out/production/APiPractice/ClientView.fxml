@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f3640;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientCrontroller">
+   <children>
+      <TextField fx:id="txtTyper" layoutX="32.0" layoutY="342.0" onAction="#txtOnAction" prefHeight="26.0" prefWidth="438.0" promptText="Write here..." />
+      <JFXButton fx:id="btnSend" buttonType="RAISED" layoutX="479.0" layoutY="342.0" onAction="#btnSendOnAction" prefHeight="26.0" prefWidth="87.0" style="-fx-border-radius: 20; -fx-background-radius: 5; -fx-background-color: #16a085;" text="Send" />
+      <JFXTextArea fx:id="txtArFace" focusColor="#4d4d4d" layoutX="6.0" layoutY="17.0" prefHeight="306.0" prefWidth="270.0" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.98" />
+         </effect>
+      </JFXTextArea>
+      <JFXTextArea fx:id="txtArFaceClient" layoutX="275.0" layoutY="17.0" prefHeight="306.0" prefWidth="315.0" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="23.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.52" contrast="-0.62" hue="-1.0" saturation="1.0" />
+         </effect></JFXTextArea>
+   </children>
+</AnchorPane>
